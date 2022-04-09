@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">   <!-- defines the characters to be used in webpage -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="description" content="Team Blog">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript,PHP">
+        <meta name="author" content="Callum Wishart">
+        <link href="{% static 'emission_calculator/styles.css' %}" rel="stylesheet">
+        <title>Onward Technology</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/logo2.png" alt="logo" >
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'calculator:calculate' %}" >Calculate</a></li>
+                    <li><a href="{% url 'calculator:options' %}">Options</a></li>
+                    <li><a href="{% url 'calculator:about' %}">About</a></li>
+                    {% if user.is_authenticated %}
+                    <li><a href="{% url 'calculator:my_account' %}">My account</a></li>
+                    {% else %}
+                    <li><a href="{% url 'calculator:register' %}">Signup</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+        
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
