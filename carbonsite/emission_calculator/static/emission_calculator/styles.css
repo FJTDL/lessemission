@@ -1,5 +1,5 @@
 :root{
-	--bluebackground:#76cbed;
+	--greenbackground:#228B22;
 	--mainbackground:#eaeaea;
 }
 
@@ -13,11 +13,12 @@ body{
 
 
 header{
-	background: var(--bluebackground);
 	text-align:center;
 	position:fixed;
-    z-index: 999;
+  z-index: 999;
 	width:100%;
+	background-image: linear-gradient(to bottom, rgba(21, 2, 107, 1), rgba(21, 2, 107, 0));
+	height: 8ex;
 }
 
 .logo{
@@ -29,11 +30,11 @@ nav{
 	text-align:left;
 	top:100%;
 	left:0;
-	background:var(--bluebackground);
 	width: 100%;
 	transform: scale(1, 0);
 	transform-origin:top;
 	transition: transform 300ms ease-in-out;
+	
 }
 
 .nav-toggle{
@@ -96,7 +97,7 @@ nav a{
 }
 
 nav a:hover{
-	color:#000;
+	color:#c4c4c4;
 }
 
 .nav-toggle:checked ~ nav{
@@ -143,7 +144,7 @@ nav a:hover{
 		content: '';
 		display:block;
 		height: 5px;
-		background:black;
+		background:#c4c4c4;
 		position:absolute;
 		top:-.75em;
 		left:0;
@@ -221,4 +222,14 @@ ul {
 	border: 5px solid #000;
 	width:fit-content;
 	transform: translate(0, 30%);
+}
+
+body {
+	background-image: url("../img/hills.jpg");
+}
+
+#branding {
+	color: #FFF;
+	font-family: 'Work Sans', sans-serif;
+	font-style: italic;
 }
