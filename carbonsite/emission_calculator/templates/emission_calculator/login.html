@@ -1,0 +1,18 @@
+{% extends "emission_calculator/layout.html" %}
+{% load static %}
+
+{% block head %}
+  <link href="{% static 'emission_calculator/styles.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+  <div>
+    <h1>Login</h1>
+    <form method="POST">
+      {% csrf_token %}
+      {{ login_form|crispy }}
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="calculator:register">Create an account</a>.</p>
+  </div>
+{% endblock %}

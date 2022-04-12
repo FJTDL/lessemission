@@ -7,7 +7,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">    
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% block head %}
-        
         {% endblock %}
         <title>Onward Technology</title>
     </head>
@@ -27,12 +26,9 @@
                     {% endif %}
                 </ul>
             </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
+            <label for="nav-toggle" class="nav-toggle-label"></label>
         </header>
-        
-        {% block body %}
+        {% block content%}
         {% endblock %}
     </body>
 </html>
