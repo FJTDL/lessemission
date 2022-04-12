@@ -224,6 +224,10 @@ ul {
 	transform: translate(0, 30%);
 }
 
+body {
+	background-image: url("../img/hills.jpg");
+}
+
 #branding {
 	color: #FFF;
 	font-family: 'Work Sans', sans-serif;

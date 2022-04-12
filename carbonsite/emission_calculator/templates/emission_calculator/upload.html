@@ -1,7 +1,10 @@
-{% extends 'emission_calculator/basic.html' %}
+{% extends "emission_calculator/layout.html" %}
+{% load static %}
 
-{% block content %}
+{% block head %}
+  <link href="{% static 'emission_calculator/styles.css' %}" rel="stylesheet">
+{% endblock %}
 
-
+{% block body %}
 
 {% endblock %}
