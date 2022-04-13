@@ -20,8 +20,8 @@
             <nav>
                 <ul>
                     <li><a href="{% url 'calculator:home' %}">Home</a></li>
-                    <li><a href="{% url 'calculator:home' %}">About</a></li>
-                    <li><a href="{% url 'calculator:home' %}">Calculate</a></li>
+                    <li><a href="{% url 'calculator:about' %}">About</a></li>
+                    <li><a href="{% url 'calculator:calculator' %}">Calculate</a></li>
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'calculator:my_account' %}">My account</a></li>
                     {% else %}
@@ -34,7 +34,7 @@
             </label>
         </header>
         
-        {% block body %}
+        {% block content %}
         {% endblock %}
     </body>
 </html>
