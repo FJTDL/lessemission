@@ -7,4 +7,57 @@
 
 {% block content %}
 
+<section class="box">
+  <a href="{% url 'calculator:electric' %}">
+    <div class="row">
+      <div class="column">
+        <h2 class="option_head">Electric Vehicles</h2>
+        <img src="{% static '../static/img/electric_car.png' %}" class="thumbnail" id="electric_car">
+      </div>
+      <div class="column">
+        <p class="brief_text">Electric vehicles are an excellent way to cut your emission on the road and save on fuel prices.</p>
+        <p class="brief_text">They are pretty expensive to buy though.</p>
+      </div>
+      <button class="more">TELL ME MORE</button>
+    </div>
+  </a>
+</section>
+
+
+<br>
+
+<section class="box">
+  <a href="{% url 'calculator:provider' %}">
+    <div class="row">
+      <div class="column">
+        <h2 class="option_head">Providers</h2>
+        <img src="{% static '../static/img/solar.jpg' %}" class="thumbnail" id="renewable">
+      </div>
+      <div class="column">
+        <p class="brief_text">Switching your electricity provider is an excellent way to decrease your emissions, and potentially save some money!</p>
+      </div>
+      <button class="more">TELL ME MORE</button>
+    </div>
+  </a>
+</section>
+
+<br>
+
+<section class="box" id="final">
+  <a href="{% url 'calculator:reduce_reuse_recycle' %}">
+    <div class="row">
+      <div class="column">
+        <h2 class="option_head">Reduce Reuse Recycle</h2>
+        <img src="{% static '../static/img/bin.jpg' %}" class="thumbnail" id="rrr">
+      </div>
+      <div class="column">
+        <p class="brief_text">Start small: If you can reduce, reuse or recycle what would otherwise be waste, you your total emissions by preventing it decomposing in landfill.</p>
+      </div>
+      <button class="more">TELL ME MORE</button>
+    </div>
+  </a>
+</section>
+
+<br>
+
 {% endblock %}

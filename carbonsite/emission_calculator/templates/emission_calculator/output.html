@@ -25,12 +25,12 @@
   </div>
 
     {% if electric == "False" and budget > 70000 %}
-    <section class="box">
+    <section class="box final">
         <a href="{% url 'calculator:electric' %}">
           <div class="row">
             <div class="column">
               <h2 class="option_head">Electric Vehicles</h2>
-              <img src="{% static '../static/images/electric_car.png' %}" id="electric_car">
+              <img src="{% static '../static/img/electric_car.png' %}" class="thumbnail">
             </div>
             <div class="column">
               <p class="brief_text">Electric vehicles are an excellent way to cut your emission on the road and save on fuel prices.</p>
@@ -41,12 +41,12 @@
         </a>
       </section>
     {% elif provider == "False" %}
-    <section class="box">
+    <section class="box final">
         <a href="{% url 'calculator:provider' %}">
           <div class="row">
             <div class="column">
               <h2 class="option_head">Providers</h2>
-              <img src="{% static '../static/images/solar.jpg' %}" id="renewable">
+              <img src="{% static '../static/img/solar.jpg' %}" class="thumbnail">
             </div>
             <div class="column">
               <p class="brief_text">Switching your electricity provider is an excellent way to decrease your emissions, and potentially save some money!</p>
@@ -56,12 +56,12 @@
         </a>
     </section>
     {% elif rrr == "False"%}
-    <section class="box" id="final">
+    <section class="box final">
         <a href="{% url 'calculator:reduce_reuse_recycle' %}">
           <div class="row">
             <div class="column">
               <h2 class="option_head">Reduce Reuse Recycle</h2>
-              <img src="{% static '../static/images/bin.jpg' %}" id="rrr">
+              <img src="{% static '../static/img/bin.jpg' %}" class="thumbnail">
             </div>
             <div class="column">
               <p class="brief_text">Start small: If you can reduce, reuse or recycle what would otherwise be waste, you your total emissions by preventing it decomposing in landfill.</p>
@@ -71,12 +71,12 @@
         </a>
     </section>
     {% else %}
-    <section class="box" id="final">
+    <section class="box final">
         <a href="{% url 'calculator:options' %}">
           <div class="row">
             <div class="column">
               <h2 class="option_head">YOU'RE FINE BY US</h2>
-              <img src="{% static '../static/images/thumb.png' %}" id="pog">
+              <img src="{% static '../static/img/thumb.png' %}" class="thumbnail" id="thumb">
             </div>
             <div class="column">
               <p class="brief_text" id="amazing">By all our measures, you're really good. If you want do more we encourage you to find more resources online!</p>

@@ -10,7 +10,10 @@ body{
     font-weight:400;
 }
 
-
+a {
+	text-decoration: none;
+	color: #FFF;
+}
 
 header{
 	text-align:center;

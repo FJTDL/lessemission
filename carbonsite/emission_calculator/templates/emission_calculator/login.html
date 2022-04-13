@@ -6,13 +6,14 @@
 {% endblock %}
 
 {% block content %}
-  <div>
+{% load crispy_forms_tags %} 
+  <div class="login_page">
     <h1>Login</h1>
     <form method="POST">
       {% csrf_token %}
       {{ login_form|crispy }}
       <button type="submit">Login</button>
     </form>
-    <p>Don't have an account? <a href="calculator:register">Create an account</a>.</p>
+    <p>Don't have an account? <a href="{% url 'calculator:register' %}">Create an account</a>.</p>
   </div>
 {% endblock %}

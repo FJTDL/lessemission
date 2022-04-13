@@ -10,7 +10,13 @@ body{
     font-weight:400;
 }
 
+section a {
+	text-decoration: none;
+}
 
+ul {
+	list-style: none;
+}
 
 header{
 	text-align:center;
@@ -157,6 +163,12 @@ nav a:hover{
 	}
 }
 
+.login_page {
+	text-align: center;
+	position: relative;
+	top: 100px;
+}
+
 /* Styling for the image and header of the about.php page */
 .about1 {
 	margin: auto;
@@ -195,8 +207,48 @@ p {
 	text-decoration: underline;
 }
 
-#box {
-	border-style: solid;
+.thumbnail {
+	position: relative;
+	left: 1px;
+	width: 60%;
+}
+
+.box {
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	width: 70%;
+	box-sizing: border-box;
+	border: 1px solid #228B22;
+}
+
+.more {
+	position: relative;
+	bottom: 1px;
+	background-color: #675B9C;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.final {
+	margin-bottom: 150px;
+}
+
+.brief_text {
+	font-weight: normal;
+	position: relative;
+	top: 50px;
+	right: 40px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
 
 #final {
@@ -228,4 +280,15 @@ ul {
 	color: #FFF;
 	font-family: 'Work Sans', sans-serif;
 	font-style: italic;
+}
+
+#signup_form {
+	padding-bottom: 40px;
+	list-style: none;
+}
+
+#thumb {
+	width: 30%;
+	position: relative;
+	left: 50px;
 }
