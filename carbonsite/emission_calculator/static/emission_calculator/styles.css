@@ -40,7 +40,6 @@ nav{
 	transform: scale(1, 0);
 	transform-origin:top;
 	transition: transform 300ms ease-in-out;
-	
 }
 
 .nav-toggle{
@@ -100,6 +99,9 @@ nav a{
 	text-transform: uppercase;
 	opacity:0;
 	transition: opacity 150ms ease-in-out;
+	background-color: #675B9C;
+	padding: 2px 20px;
+	border-radius: 50%;
 }
 
 nav a:hover{
@@ -136,7 +138,7 @@ nav a:hover{
 		align-items: center;
 	}
 	nav ul{
-		display:flex;		
+		display:flex;
 	}
 	nav li{
 		margin-left:3em;
@@ -145,6 +147,7 @@ nav a:hover{
 	nav a{
 		opacity: 1;
 		position:relative;
+		background: none;
 	}
 	nav a::before{
 		content: '';
