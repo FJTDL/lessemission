@@ -16,7 +16,6 @@
     <body>
         <header>
             <h1><a href="{% url 'calculator:home' %}" id="branding">EMITLS</a></h1>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
                     <li><a href="{% url 'calculator:home' %}">Home</a></li>
@@ -33,7 +32,6 @@
                 <span></span>
             </label>
         </header>
-        
         {% block content %}
         {% endblock %}
     </body>

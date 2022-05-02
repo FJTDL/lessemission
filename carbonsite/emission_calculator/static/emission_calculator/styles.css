@@ -1,3 +1,5 @@
+/* Styling the base of the pages */
+
 :root{
 	--greenbackground:#228B22;
 	--mainbackground:#eaeaea;
@@ -8,6 +10,23 @@ body{
     background:var(--mainbackground);
     font-family: 'Work Sans', sans-serif;
     font-weight:400;
+}
+
+main {
+	text-align: center;
+	position: relative;
+	top: 100px;
+}
+
+main h1 {
+	float: left;
+}
+
+/* Stops the paragraphs from looking awful */
+p {
+	font-family: 'Work sans', sans-serif;
+	font-weight: bold;
+	text-align: center;
 }
 
 section a {
@@ -27,9 +46,7 @@ header{
 	height: 8ex;
 }
 
-.logo{
-	margin:0px;
-}
+/* Styling the nav */
 
 nav{
 	position: absolute;
@@ -117,6 +134,8 @@ nav a:hover{
 	transition: opacity 250ms ease-in-out 250ms;
 }
 
+/* Media query to change styling depending on view window */
+
 @media screen and (min-width:1150px) {
 	.nav-toggle-label{
 		display:none;
@@ -195,13 +214,6 @@ nav a:hover{
 	margin: auto;
 	width: 90%;
 	padding: 10px;
-	text-align: center;
-}
-
-/* Stops the paragraphs from looking like shit */
-p {
-	font-family: 'Work sans', sans-serif;
-	font-weight: bold;
 	text-align: center;
 }
 
@@ -295,4 +307,23 @@ ul {
 	width: 30%;
 	position: relative;
 	left: 50px;
+}
+
+#legs {
+	height: 500px;
+	margin: 100px 100px;
+	float:left; 
+	width:25%;
+	border-radius: 15%;
+}
+
+#about-article {
+	float:right;
+	margin: 170px 100px;
+	width: 40%;
+	height:280px;
+}
+
+#story {
+	text-align: center;
 }

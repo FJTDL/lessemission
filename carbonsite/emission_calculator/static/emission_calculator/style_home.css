@@ -1,3 +1,5 @@
+/* Base code here */
+
 :root{
 	--greenbackground:#228B22;
 	--mainbackground:#eaeaea;
@@ -5,14 +7,21 @@
 
 body{
     margin:0;
-    background:var(--mainbackground);
     font-family: 'Work Sans', sans-serif;
     font-weight:400;
+		background-image: url("../img/hills.jpg");
 }
 
 a {
 	text-decoration: none;
 	color: #FFF;
+}
+
+/* Stops the paragraphs from looking awful  */
+p {
+	font-family: 'Work sans', sans-serif;
+	font-weight: bold;
+	text-align: center;
 }
 
 header{
@@ -24,9 +33,17 @@ header{
 	height: 8ex;
 }
 
-.logo{
-	margin:0px;
+ul {
+	text-align: center;
+	font-family: 'Work sans', sans-serif;
+	font-style: italic;
 }
+
+
+
+/* Code for the nav bar begins here */
+
+
 
 nav{
 	position: absolute;
@@ -112,6 +129,8 @@ nav a:hover{
 	transition: opacity 250ms ease-in-out 250ms;
 }
 
+/* Media query to change nav bar depending on screne size */
+
 @media screen and (min-width:1150px) {
 	.nav-toggle-label{
 		display:none;
@@ -160,23 +179,6 @@ nav a:hover{
 	}
 }
 
-/* Styling for the image and header of the about.php page */
-.about1 {
-	margin: auto;
-	width: 50%;
-	border: 3px #76cbed;
-	padding: 5px;
-	text-align: center;
-	font-family: 'Work Sans', sans-serif;
-}
-
-/* Styling for the wiki div class under the about.php page */
-.wiki {
-	text-align: center;
-	font-family: 'Work Sans', sans-serif;
-	padding: 70px 0;
-	text-justify: inner-word;
-}
 
 /* Centers elements to the middle of page */
 .center {
@@ -186,12 +188,8 @@ nav a:hover{
 	text-align: center;
 }
 
-/* Stops the paragraphs from looking like shit */
-p {
-	font-family: 'Work sans', sans-serif;
-	font-weight: bold;
-	text-align: center;
-}
+
+/* ID based styling */
 
 #underline {
 	text-align: center;
@@ -204,12 +202,6 @@ p {
 
 #final {
 	font-weight: bold;
-}
-
-ul {
-	text-align: center;
-	font-family: 'Work sans', sans-serif;
-	font-style: italic;
 }
 
 #uploadpos {
@@ -225,10 +217,6 @@ ul {
 	border: 5px solid #000;
 	width:fit-content;
 	transform: translate(0, 30%);
-}
-
-body {
-	background-image: url("../img/hills.jpg");
 }
 
 #branding {
