@@ -112,7 +112,7 @@ nav li{
 nav a{
 	color: white;
 	text-decoration: none;
-	font-size:1.2rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	opacity:0;
 	transition: opacity 150ms ease-in-out;
@@ -235,6 +235,7 @@ nav a:hover{
 	width: 70%;
 	box-sizing: border-box;
 	border: 1px solid #228B22;
+	overflow: auto;
 }
 
 .more {
@@ -259,6 +260,11 @@ nav a:hover{
 
 .row {
   display: flex;
+}
+
+.logout {
+	position: relative;
+	top: 100px;
 }
 
 .column {
@@ -311,10 +317,11 @@ ul {
 
 #legs {
 	height: 500px;
+	width: 500px;
 	margin: 100px 100px;
 	float:left; 
 	width:25%;
-	border-radius: 15%;
+	border-radius: 50%;
 }
 
 #about-article {

@@ -6,9 +6,9 @@
 {% endblock %}
 
 {% block content %}
-  <h1 class="center" id="logout"><a href="{% url 'calculator:logout' %}" >Click me to logout!</a></h1>
+  <h1 class="center logout"><a href="{% url 'calculator:logout' %}" >Click me to logout!</a></h1>
 
-  <h1 id="logout">Hello {{ user }}!</h1>
+  <h1 class="logout">Hello {{ user }}!</h1>
 
-  <h1 id="logout">Your previous score was {{ user.score }}</h1>
+  <h1 class="logout">Your previous score was {{ user.score }}</h1>
 {% endblock %}

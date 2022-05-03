@@ -16,13 +16,15 @@
     <body>
         <header>
             <h1><a href="{% url 'calculator:home' %}" id="branding">EMITLS</a></h1>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
                     <li><a href="{% url 'calculator:home' %}">Home</a></li>
                     <li><a href="{% url 'calculator:about' %}">About</a></li>
                     <li><a href="{% url 'calculator:calculator' %}">Calculate</a></li>
+                    <li><a href="{% url 'calculator:options' %}">Options</a></li>
                     {% if user.is_authenticated %}
-                    <li><a href="{% url 'calculator:my_account' %}">My account</a></li>
+                    <li><a href="{% url 'calculator:my_account' %}">Profile</a></li>
                     {% else %}
                     <li><a href="{% url 'calculator:register' %}">Signup</a></li>
                     {% endif %}
