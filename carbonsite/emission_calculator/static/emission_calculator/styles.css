@@ -2,8 +2,7 @@
 
 :root{
 	--greenbackground:#228B22;
-	--mainbackground:#ffffff;
-	--textcolor: rgb(255, 255, 255);
+	--mainbackground:#eaeaea;
 }
 
 body{
@@ -44,6 +43,7 @@ header{
   z-index: 999;
 	width:100%;
 	background-image: linear-gradient(to bottom, rgba(21, 2, 107, 1), rgba(21, 2, 107, 0));
+	height: 8ex;
 }
 
 /* Styling the nav */
@@ -57,7 +57,6 @@ nav{
 	transform: scale(1, 0);
 	transform-origin:top;
 	transition: transform 300ms ease-in-out;
-	
 }
 
 .nav-toggle{
@@ -113,10 +112,13 @@ nav li{
 nav a{
 	color: white;
 	text-decoration: none;
-	font-size:1.2rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	opacity:0;
 	transition: opacity 150ms ease-in-out;
+	background-color: #675B9C;
+	padding: 2px 20px;
+	border-radius: 50%;
 }
 
 nav a:hover{
@@ -132,7 +134,7 @@ nav a:hover{
 	transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* Media query to change nav bar depending on screne size */
+/* Media query to change styling depending on view window */
 
 @media screen and (min-width:1150px) {
 	.nav-toggle-label{
@@ -155,14 +157,16 @@ nav a:hover{
 		align-items: center;
 	}
 	nav ul{
-		display:flex;		
+		display:flex;
 	}
 	nav li{
+		margin-left:3em;
 		margin-bottom:0;
 	}
 	nav a{
 		opacity: 1;
 		position:relative;
+		background: none;
 	}
 	nav a::before{
 		content: '';
@@ -238,7 +242,7 @@ nav a:hover{
 	position: relative;
 	bottom: 1px;
 	background-color: #675B9C;
-	color: var(--textcolor);
+	color: #fff;
 	border: none;
 	cursor: pointer;
 }
@@ -294,7 +298,7 @@ ul {
 }
 
 #branding {
-	color: var(--textcolor);
+	color: #FFF;
 	font-family: 'Work Sans', sans-serif;
 	font-style: italic;
 	text-decoration: none;
