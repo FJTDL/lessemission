@@ -43,8 +43,6 @@ ul {
 
 /* Code for the nav bar begins here */
 
-
-
 nav{
 	position: absolute;
 	text-align:left;
@@ -155,7 +153,6 @@ nav a:hover{
 		display:flex;		
 	}
 	nav li{
-		margin-left:3em;
 		margin-bottom:0;
 	}
 	nav a{
