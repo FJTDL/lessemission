@@ -106,7 +106,6 @@ nav ul{
 
 nav li{
 	margin-bottom:1em;
-	margin-left:1em
 }
 
 nav a{
@@ -160,7 +159,6 @@ nav a:hover{
 		display:flex;
 	}
 	nav li{
-		margin-left:3em;
 		margin-bottom:0;
 	}
 	nav a{
