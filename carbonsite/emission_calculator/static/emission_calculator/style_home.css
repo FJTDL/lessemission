@@ -12,6 +12,19 @@ body{
 		background-image: url("../img/hills.jpg");
 }
 
+footer {
+	background-color:rgba(21, 2, 107, 1);
+	color: rgba(255, 255, 255, 1);
+	position:absolute;
+	bottom:0;
+	width:100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 70px;
+	align-content: center;
+	justify-items: center;
+}
+
 a {
 	text-decoration: none;
 	color: #FFF;

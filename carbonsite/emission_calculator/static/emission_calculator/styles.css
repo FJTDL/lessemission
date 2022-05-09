@@ -16,11 +16,17 @@ body{
     font-weight:400;
 }
 
+iframe {
+	margin-top: 10px;
+	height: 50%;
+}
+
 footer {
 	background-color:rgba(21, 2, 107, 1);
 	color: rgba(255, 255, 255, 1);
-	position: relative;
-	bottom: 0;
+	position: position;
+	bottom:0;
+	width:100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: 70px;
@@ -216,6 +222,7 @@ nav a:hover{
 	text-align: center;
 	position: relative;
 	top: 100px;
+	margin-bottom: 100px;
 }
 
 /* Styling for the image and header of the about.php page */
@@ -301,6 +308,7 @@ nav a:hover{
 
 #final {
 	font-weight: bold;
+	margin-bottom: 100px;
 }
 
 ul {
@@ -338,6 +346,11 @@ ul {
 	text-decoration: none;
 	position: relative;
 	top: 10px;
+}
+
+#login {
+	position: relative;
+	margin-bottom: 360px;
 }
 
 #signup_form {
