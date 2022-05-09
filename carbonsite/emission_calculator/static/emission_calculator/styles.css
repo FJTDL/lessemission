@@ -18,7 +18,7 @@ body{
 
 iframe {
 	margin-top: 10px;
-	height: 50%;
+	height: 28%;
 }
 
 footer {
@@ -351,6 +351,11 @@ ul {
 #login {
 	position: relative;
 	margin-bottom: 360px;
+}
+
+#account_page {
+	height: 500px;
+	text-align: center;
 }
 
 #signup_form {
