@@ -57,11 +57,20 @@ main h1 {
 	float: left;
 }
 
+h4 {
+	line-height: 25px;
+}
+
+hr {
+	margin: 20px 0px;
+}
+
 /* Stops the paragraphs from looking awful */
 p {
 	font-family: 'Work sans', sans-serif;
 	font-weight: bold;
 	text-align: center;
+	line-height: 25px;
 }
 
 section a {
@@ -306,9 +315,18 @@ nav a:hover{
   padding: 5px;
 }
 
+.alternatives {
+	margin-bottom: 40px;
+}
+
 #final {
 	font-weight: bold;
 	margin-bottom: 100px;
+}
+
+#top-suggestion {
+	position: relative;
+	top: 0px;
 }
 
 ul {
@@ -396,4 +414,21 @@ ul {
 
 #made_by {
 	margin-right: 20px;
+}
+
+#inputs {
+	text-align: center;
+}
+
+#id_budget {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#id_reduce_reuse_recycle {
+	margin-top: 10px;
+}
+
+#id_provider {
+	margin-top: 10px;
 }
