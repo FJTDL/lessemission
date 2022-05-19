@@ -14,6 +14,7 @@
       <h4>Does your electricity provider generate from renewable technology?</h4>
       <h4>Do you do any of: reducing, reusing or recycling your waste?</h4>
     </section>
+    <hr>
     <FORM METHOD="post" ACTION="{% url 'calculator:output' %}">
       {% csrf_token %}
       {{ form.as_p }}
