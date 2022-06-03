@@ -40,8 +40,8 @@
           </div>
         </a>
       </section>
-    {% elif provider == "False" %}
-    <section class="box final">
+    {% elif provider == "False" and rrr == "False" %}
+      <section class="box final">
         <a href="{% url 'calculator:provider' %}">
           <div class="row">
             <div class="column">
@@ -54,9 +54,8 @@
             <button class="more">TELL ME MORE</button>
           </div>
         </a>
-    </section>
-    {% elif rrr == "False"%}
-    <section class="box final">
+      </section>
+      <section class="box final">
         <a href="{% url 'calculator:reduce_reuse_recycle' %}">
           <div class="row">
             <div class="column">
@@ -69,9 +68,39 @@
             <button class="more">TELL ME MORE</button>
           </div>
         </a>
-    </section>
+      </section>
+    {% elif provider == "False" %}
+      <section class="box final">
+        <a href="{% url 'calculator:provider' %}">
+          <div class="row">
+            <div class="column">
+              <h2 class="option_head">Providers</h2>
+              <img src="{% static '../static/img/solar.jpg' %}" class="thumbnail">
+            </div>
+            <div class="column">
+              <p class="brief_text">Switching your electricity provider is an excellent way to decrease your emissions, and potentially save some money!</p>
+            </div>
+            <button class="more">TELL ME MORE</button>
+          </div>
+        </a>
+      </section>
+    {% elif rrr == "False"%}
+      <section class="box final">
+        <a href="{% url 'calculator:reduce_reuse_recycle' %}">
+          <div class="row">
+            <div class="column">
+              <h2 class="option_head">Reduce Reuse Recycle</h2>
+              <img src="{% static '../static/img/bin.jpg' %}" class="thumbnail">
+            </div>
+            <div class="column">
+              <p class="brief_text">Start small: If you can reduce, reuse or recycle what would otherwise be waste, you your total emissions by preventing it decomposing in landfill.</p>
+            </div>
+            <button class="more">TELL ME MORE</button>
+          </div>
+        </a>
+      </section>
     {% else %}
-    <section class="box final">
+      <section class="box final">
         <a href="{% url 'calculator:options' %}">
           <div class="row">
             <div class="column">
@@ -79,10 +108,11 @@
               <img src="{% static '../static/img/thumb.png' %}" class="thumbnail" id="thumb">
             </div>
             <div class="column">
-              <p class="brief_text" id="amazing">By all our measures, you're really good. If you want do more we encourage you to find more resources online!</p>
+              <p class="brief_text" id="amazing">By all our measures, you're really good. If you want do more we encourage you to find more resources online!
+                <a class="link" href="https://news.climate.columbia.edu/2018/12/27/35-ways-reduce-carbon-footprint/">We recommend trying this link for 35 ways to cut emissions!</a></p>
             </div>
           </div>
         </a>
-    </section>
+      </section>
     {% endif %}
 {% endblock %}
