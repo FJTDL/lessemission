@@ -4,6 +4,8 @@ from . import views
 
 
 # landing page function.
+
+# Create an app name to make it easier
 app_name = "calculator"
 urlpatterns = [
   path('', views.home, name=''),

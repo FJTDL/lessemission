@@ -5,6 +5,8 @@ from django.contrib.auth.models import User
 
 # Create your forms here.
 
+
+# Form to create new user
 class NewUserForm(UserCreationForm):
 	email = forms.EmailField(required=True)
 
@@ -19,6 +21,8 @@ class NewUserForm(UserCreationForm):
 			user.save()
 		return user
 
+
+# Form to obtain the inputs to calculate
 class YesNoForm(forms.Form):
     electric_car = forms.TypedChoiceField(coerce=lambda x: x =='True', choices=((False, 'No'), (True, 'Yes')))
     provider = forms.TypedChoiceField(coerce=lambda x: x =='True', choices=((False, 'No'), (True, 'Yes')))

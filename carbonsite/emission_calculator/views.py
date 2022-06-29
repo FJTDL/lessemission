@@ -9,6 +9,8 @@ from django.contrib import messages
 
 
 # Create your views here.
+
+# Simple render requests
 def home(request):
   return render(request, "emission_calculator/home.html")
 
@@ -33,12 +35,14 @@ def reduce_reuse_recycle(request):
   return render(request, "emission_calculator/rrr.html")
 
 
+# Renders with form as context
 def score(request):
   return render(request, "emission_calculator/score.html", {
         "form": YesNoForm()
     })
 
 
+# Output based on the user inputs
 def output(request):
 
 		score = 0
@@ -64,6 +68,7 @@ def output(request):
 			"budget": int(request.POST['budget']),
 		})
 
+# Request renders with registeration form to create a new user
 def register(request):
 	if request.method == "POST":
 		form = NewUserForm(request.POST)
@@ -76,7 +81,7 @@ def register(request):
 	form = NewUserForm()
 	return render (request=request, template_name="emission_calculator/signup.html", context={"register_form":form})
 
-
+# Request renders with login form
 def login_request(request):
 	if request.method == "POST":
 		form = AuthenticationForm(request, data=request.POST)
@@ -96,17 +101,12 @@ def login_request(request):
 	form = AuthenticationForm()
 	return render(request=request, template_name="emission_calculator/login.html", context={"login_form":form})
 
-
+# Logout request
 def logout_request(request):
 	logout(request)
 	return redirect("calculator:")
 
-
-def my_account(request):
-	scores = Score.objects.order_by('user')
-	return render(request, "emission_calculator/account.html", {'scores': scores})
-
-
+# Should render the account page with all the scores as context
 def my_account(request):
 	scores = Score.objects.order_by('user')
 	return render(request, "emission_calculator/account.html", {'scores': scores})
