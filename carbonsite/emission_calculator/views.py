@@ -55,10 +55,9 @@ def output(request):
 		if request.POST['reduce_reuse_recycle'] == "True":
 			score += 1
 
-		user = request.user
-		if user.is_authenticated:
-			user.score = score
-			user.save()
+		if request.user.is_authenticated:
+			request.user.score = score
+			request.user.save()
 
 		return render(request, 'emission_calculator/output.html', {
 			"number": score,
@@ -108,5 +107,4 @@ def logout_request(request):
 
 # Should render the account page with all the scores as context
 def my_account(request):
-	scores = Score.objects.order_by('user')
-	return render(request, "emission_calculator/account.html", {'scores': scores})
+	return render(request, "emission_calculator/account.html")
