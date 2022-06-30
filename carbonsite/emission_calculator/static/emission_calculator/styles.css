@@ -14,6 +14,7 @@ body {
 	background: var(--mainbackground);
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
+	background-size: cover;
 }
 
 iframe {
@@ -24,7 +25,7 @@ iframe {
 footer {
 	background-color: rgba(21, 2, 107, 1);
 	color: rgba(255, 255, 255, 1);
-	position: relative;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	display: grid;
@@ -232,6 +233,24 @@ nav a:hover {
 	nav a:hover::before {
 		transform: scale(1, 1);
 	}
+	#uploadpos {
+		margin: 0 auto;
+		width: 60%;
+		padding-top: 300px;
+	}
+	#about-grid {
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		padding-top: 10%;
+	}
+	#legs {
+		grid-column: 1 / 4;
+		height: 100px;
+		width: 100px;
+		margin: 100px 100px;
+		width: 100%;
+		border-radius: 50%;
+	}
 }
 
 .login_page {
@@ -317,6 +336,10 @@ nav a:hover {
 	color: rgba(21, 2, 107, 1);
 }
 
+.questionaire {
+	margin-top: 1vw;
+}
+
 .logout {
 	position: relative;
 	top: 100px;
@@ -348,7 +371,7 @@ ul {
 }
 
 #uploadpos {
-	margin: auto;
+	margin: 0 auto;
 	width: 60%;
 	padding: 150px;
 }
@@ -433,14 +456,14 @@ ul {
 }
 
 #id_budget {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 1vw;
+	margin-bottom: 1vw;
 }
 
 #id_reduce_reuse_recycle {
-	margin-top: 10px;
+	margin-top: 1vw;
 }
 
 #id_provider {
-	margin-top: 10px;
+	margin-top: 1vw;
 }
