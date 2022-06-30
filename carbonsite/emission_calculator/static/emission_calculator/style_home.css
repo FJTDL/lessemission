@@ -11,6 +11,8 @@ body{
     font-weight:400;
 		background-image: url("../img/hills.jpg");
 		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: rgba(21, 2, 107, 1);
 }
 
 footer {
