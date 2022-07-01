@@ -56,8 +56,12 @@ def output(request):
 			score += 1
 
 		if request.user.is_authenticated:
-			request.user.score = score
-			request.user.save()
+			value = CarbonScore()
+			value.value = score
+			value.parent = request.user
+			value.save()
+			request.user.score = value
+			request.user.score.save()
 
 		return render(request, 'emission_calculator/output.html', {
 			"number": score,
