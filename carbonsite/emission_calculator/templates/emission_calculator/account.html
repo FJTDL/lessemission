@@ -8,7 +8,7 @@
 {% block content %}
   <section id="account_page">
     <h1 class="center logout"><a href="{% url 'calculator:logout' %}" >Click me to logout!</a></h1>
-    <h1  class="center logout"> {{user.score }}</h1>
     <h1 class="logout">Hello {{ user }}!</h1>
+    <h1  class="logout">Your most recent score was {{ user.score.value }}</h1>
   </section>
 {% endblock %}
