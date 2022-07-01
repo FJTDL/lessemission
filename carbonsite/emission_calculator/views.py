@@ -58,6 +58,7 @@ def output(request):
 		if request.user.is_authenticated:
 			value = CarbonScore()
 			value.value = score
+			value.parent = request.user
 			value.save()
 			request.user.score = value
 			request.user.score.save()

@@ -8,7 +8,8 @@ from django.dispatch import receiver
 # User object is created when the user form is submitted with valid details
 class CarbonScore(models.Model):
     value = models.IntegerField()
+    parent = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
 
 class User(models.Model):
     name = models.CharField(max_length=20)
-    score = models.OneToOneField(CarbonScore, on_delete=models.CASCADE, null=True, blank=True)
+    score = models.ForeignKey(CarbonScore, on_delete=models.CASCADE, null=True, blank=True)
