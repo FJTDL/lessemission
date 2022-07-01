@@ -60,7 +60,7 @@ def output(request):
 			value.value = score
 			value.save()
 			request.user.score = value
-			request.user.save()
+			request.user.score.save()
 
 		return render(request, 'emission_calculator/output.html', {
 			"number": score,
