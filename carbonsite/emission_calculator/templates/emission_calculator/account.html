@@ -9,6 +9,6 @@
   <section id="account_page">
     <h1 class="center logout"><a href="{% url 'calculator:logout' %}" >Click me to logout!</a></h1>
     <h1 class="logout">Hello {{ user }}!</h1>
-    <h1 class="logout">Your most recent score was {{ CarbonScore.value }}</h1>
+    <h2 class="logout">By logging in, you are allowing us to record your account to your scores for statistical purposes.</h2>
   </section>
 {% endblock %}
