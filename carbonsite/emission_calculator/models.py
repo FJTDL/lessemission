@@ -10,6 +10,7 @@ class CarbonScore(models.Model):
     value = models.IntegerField()
     parent = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
 
+# User object declaration
 class User(models.Model):
     name = models.CharField(max_length=20)
     score = models.ForeignKey(CarbonScore, on_delete=models.CASCADE, null=True, blank=True)

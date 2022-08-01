@@ -24,7 +24,7 @@
     <h4 class="center">Based on your results we suggest:</h4>
   </div>
 
-    {% if electric == "False" and budget > 40000 %}
+    {% if electric == "False" and budget > 39999 %}
     <section class="box final">
         <a href="{% url 'calculator:electric' %}">
           <div class="row">
@@ -34,7 +34,6 @@
             </div>
             <div class="column">
               <p class="brief_text">Electric vehicles are an excellent way to cut your emission on the road and save on fuel prices.</p>
-              <!-- <p class="brief_text">They are pretty expensive to buy though.</p> -->
             </div>
             <button class="more">TELL ME MORE</button>
           </div>

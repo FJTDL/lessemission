@@ -10,7 +10,7 @@ from django.contrib import messages
 
 # Create your views here.
 
-# Simple render requests
+# Simple render requests, for each page
 def home(request):
   return render(request, "emission_calculator/home.html")
 

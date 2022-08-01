@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# Added emission_calculator and crispy_forms
 INSTALLED_APPS = [
     'emission_calculator',
     'django.contrib.admin',
