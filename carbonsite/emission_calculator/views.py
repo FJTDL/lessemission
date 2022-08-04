@@ -112,3 +112,4 @@ def logout_request(request):
 # Should render the account page with all the scores as context
 def my_account(request):
 	return render(request, "emission_calculator/account.html")
+	
