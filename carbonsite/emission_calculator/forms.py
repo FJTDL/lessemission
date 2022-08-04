@@ -24,7 +24,7 @@ class NewUserForm(UserCreationForm):
 
 # Form to obtain the inputs to calculate
 class YesNoForm(forms.Form):
-  	electric_car = forms.TypedChoiceField(coerce=lambda x: x =='True', choices=((False, 'No'), (True, 'Yes')))
+    electric_car = forms.TypedChoiceField(coerce=lambda x: x =='True', choices=((False, 'No'), (True, 'Yes')))
     provider = forms.TypedChoiceField(coerce=lambda x: x =='True', choices=((False, 'No'), (True, 'Yes')))
     reduce_reuse_recycle = forms.TypedChoiceField(coerce=lambda x: x =='True', choices=((False, 'No'), (True, 'Yes')))
     budget = forms.IntegerField(label="budget", min_value=0)
